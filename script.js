@@ -1,4 +1,8 @@
 document.getElementById("status").addEventListener('click', async () => {
+    // Clear the result container before making the new API call
+    const resultContainer = document.getElementById('result');
+    resultContainer.innerHTML = '';
+
     const trainNumber = document.getElementById("trainNumber").value;
     const url = `https://irctc1.p.rapidapi.com/api/v1/liveTrainStatus?trainNo=${trainNumber}&startDay=0`;
     
@@ -37,9 +41,12 @@ document.getElementById("status").addEventListener('click', async () => {
             Train crossed: <b>${reached} station</b><br>
             Upcoming station: <b>${nextStation}<b/>
         `;
-        document.getElementById('result').appendChild(details);
-        
+        resultContainer.appendChild(details);
     } catch (error) {
         console.error('Error fetching train status:', error);
+        // Optionally, display the error message to the user
+        const errorMsg = document.createElement('p');
+        errorMsg.textContent = 'Failed to fetch train status. Please try again.';
+        resultContainer.appendChild(errorMsg);
     }
 });
