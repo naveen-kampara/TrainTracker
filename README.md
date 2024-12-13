@@ -23,13 +23,13 @@ A real-time web application to track train statuses by fetching live data using 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/naveen-kampara/train-tracker.git
+   git clone https://github.com/naveen-kampara/TrainTracker.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd train-tracker
+   cd TrainTracker
    ```
 
 3. Open the `index.html` file in your web browser to launch the application.
