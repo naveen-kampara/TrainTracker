@@ -85,15 +85,7 @@ train-tracker/
 - **Advanced Search Options**: Add filters for train search, such as start and end stations.
 - **Enhanced Error Feedback**: Provide detailed error messages for specific issues like API limits or incorrect train numbers.
 - **Mobile Optimization**: Further optimize the design for smaller screens.
-
 ---
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-
----
-
 ## Author
 
 - **Naveen Kampara**: Full-stack developer with a focus on real-time web applications.
